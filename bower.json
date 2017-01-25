@@ -1,0 +1,13 @@
+{
+  "name": "xml-json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "xml-json.html",
+  "keywords": [
+    "polymer",
+    "web-components"
+  ],
+  "dependencies": {
+    "polymer": "polymer/polymer#~1.7.1"
+  }
+}
