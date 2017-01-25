@@ -1,5 +1,4 @@
 <link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../polymer/polymer.html">
 
 <script>
 /*
@@ -11,13 +10,14 @@
   Polymer({
     is: "xml-json",
     properties:{
-      xml: Object,
+      xml: XMLDocument,
       json:{
         notify:true,
         computed:"xmlToJson(xml)",
       },
     },
     xmlToJson: function(xml){
+      if (xml) {
       // Create the return object
       var obj = {}
       if (xml.nodeType == 1) { // element
