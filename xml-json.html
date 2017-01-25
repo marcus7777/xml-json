@@ -1,20 +1,19 @@
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="../polymer/polymer.html">
-<!--
-  `<xml-json></xml-json>` xml to json from  https://davidwalsh.name/convert-xml-json 
-  @demo demo.html
--->
-<dom-module id="xml-json">
-  <template>
-    
-  </template>
-</dom-module>
+
 <script>
+/*
+ *
+ *   `<xml-json></xml-json>` xml to json from  https://davidwalsh.name/convert-xml-json 
+ *   @demo demo.html
+ *
+ */
   Polymer({
     is: "xml-json",
     properties:{
-      xml:Object,
+      xml: Object,
       json:{
+        notify:true,
         computed:"xmlToJson(xml)",
       },
     },
