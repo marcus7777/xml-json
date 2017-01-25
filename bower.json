@@ -8,6 +8,7 @@
     "web-components"
   ],
   "dependencies": {
-    "polymer": "polymer/polymer#~1.7.1"
+    "polymer": "polymer/polymer#~1.7.1",
+    "xmlToJSON": "metatribal/xmlToJSON"
   }
 }
