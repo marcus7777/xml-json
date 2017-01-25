@@ -10,15 +10,16 @@
   Polymer({
     is: "xml-json",
     properties:{
-      xml: String,
       json:{
         notify:true,
         computed:"xmlToJson(xml)",
       },
     },
     xmlToJson: function(xml){
-      if (xml) {
+      if (typeof xml === "string") {
         return xmlToJSON.parseString(xml)
+      } else {
+        return xmlToJSON.parseXML(xml)
       }
     },
   })
